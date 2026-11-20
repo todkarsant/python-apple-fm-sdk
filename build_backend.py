@@ -96,7 +96,7 @@ def _build_c_bindings(
         if "CommandLineTools" in developer_dir:
             raise SwiftToolingError(
                 f"The active developer directory is set to Command Line Tools ({developer_dir}), "
-                "but a full Xcode installation is required. Please install Xcode. Then open Xcode"
+                "but a full Xcode installation is required. Please install Xcode. Then open Xcode "
                 "at least once to accept the license agreement and install the Swift SDKs."
             )
     except subprocess.CalledProcessError as e:
